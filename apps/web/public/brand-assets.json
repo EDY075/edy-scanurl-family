@@ -1,0 +1,39 @@
+{
+  "generatedFrom": "brand/logo-mark.svg",
+  "brandVersion": "concept04-20260830",
+  "masterViewBox": "0 0 96 96",
+  "safeArea": {
+    "any": 0.68,
+    "maskable": 0.56,
+    "apple": 0.64
+  },
+  "icons": [
+    "favicon-concept04.svg",
+    "favicon-concept04-16.png",
+    "favicon-concept04-32.png",
+    "favicon-concept04-48.png",
+    "apple-touch-icon-concept04.png",
+    "pwa-concept04-192.png",
+    "pwa-concept04-512.png",
+    "pwa-concept04-maskable-192.png",
+    "pwa-concept04-maskable-512.png",
+    "pwa-concept04.svg",
+    "pwa-concept04-maskable.svg",
+    "pwa-concept04-monochrome.svg"
+  ],
+  "publicMasters": [
+    "brand/logo-mark.svg",
+    "brand/logo-mark-small.svg",
+    "brand/logo-mark-light.svg",
+    "brand/logo-mark-dark.svg",
+    "brand/logo-horizontal.svg",
+    "brand/logo-horizontal-light.svg",
+    "brand/logo-horizontal-dark.svg",
+    "brand/logo-stacked.svg",
+    "brand/logo-stacked-light.svg",
+    "brand/logo-stacked-dark.svg",
+    "brand/logo-monochrome.svg",
+    "brand/logo-monochrome-light.svg",
+    "brand/logo-monochrome-dark.svg"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "edy-scanurl-family-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-22",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "vars": {
+    "SERVICE_ENABLED": "true",
+    "VIRUSTOTAL_ENABLED": "true",
+    "ALLOW_BROWSER_REVIEW": "false",
+    "WEB_ALLOWED_ORIGINS": "https://edy-scanurl-family.pages.dev"
+  },
+  "durable_objects": {
+    "bindings": [{
+      "name": "FAMILY",
+      "class_name": "FamilyCoordinator"
+    }]
+  },
+  "migrations": [
+    {
+      "tag": "family-coordinator-v1",
+      "new_sqlite_classes": ["FamilyCoordinator"]
+    }
+  ]
+}

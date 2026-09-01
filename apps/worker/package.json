@@ -1,0 +1,26 @@
+{
+  "name": "@edy-scanurl/family-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "dev": "wrangler dev --local --port 8790",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "lint": "eslint src tests --max-warnings=0"
+  },
+  "dependencies": {
+    "@edy-scanurl/core": "0.1.0",
+    "ipaddr.js": "^2.2.0",
+    "tldts": "^7.0.16"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "0.22.0",
+    "@cloudflare/workers-types": "5.20260831.1",
+    "typescript": "^5.9.2",
+    "vitest": "4.1.11",
+    "wrangler": "4.127.1"
+  }
+}

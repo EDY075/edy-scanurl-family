@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="EDY ScanURL"><rect width="512" height="512" rx="0" fill="#0F1412"/><svg x="112.63999999999999" y="112.63999999999999" width="286.72" height="286.72" viewBox="0 0 96 96"><defs>
+    <linearGradient id="edy-concept04-dark" x1="78" y1="20" x2="26" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35F0C5"/>
+      <stop offset="1" stop-color="#0BC7A2"/>
+    </linearGradient>
+  </defs>
+  <path d="M74 69C65 80 48 83 34 75C18 66 16 44 29 29C41 15 64 14 78 29L52 57Q50 60 47 58L40 51" fill="none" stroke="url(#edy-concept04-dark)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></svg>

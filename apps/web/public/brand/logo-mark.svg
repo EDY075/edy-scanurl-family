@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">EDY ScanURL — Concept 04</title>
+  <defs>
+    <linearGradient id="edy-concept04" x1="78" y1="20" x2="26" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18E6B6"/>
+      <stop offset="1" stop-color="#00B894"/>
+    </linearGradient>
+  </defs>
+  <path d="M74 69C65 80 48 83 34 75C18 66 16 44 29 29C41 15 64 14 78 29L52 57Q50 60 47 58L40 51" fill="none" stroke="url(#edy-concept04)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

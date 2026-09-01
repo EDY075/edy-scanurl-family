@@ -1,0 +1,50 @@
+{
+  "name": "edy-scanurl-family",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web:local": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/web-pwa/local.ps1",
+    "web:build": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/web-pwa/build.ps1",
+    "web:e2e": "playwright test --config playwright.web.config.ts",
+    "web:security": "node scripts/web-pwa/security-check.mjs",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "tsc -p tsconfig.json --noEmit && npm run typecheck --workspaces --if-present",
+    "lint": "eslint playwright.config.ts tests --max-warnings=0 && npm run lint --workspaces --if-present",
+    "e2e": "playwright test",
+    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "security:fuzz": "npm exec --workspace=@edy-scanurl/api -- vitest run tests/target.test.ts tests/ip-policy.test.ts tests/guarded-fetch.test.ts tests/http-transparency.test.ts tests/provider-final-states.test.ts",
+    "security:dast": "npm exec --workspace=@edy-scanurl/api -- vitest run tests/family-dast.test.ts",
+    "android:sync": "npm run build --workspace=@edy-scanurl/web && cap sync android",
+    "family:api": "node apps/api/dist/src/family/server.js",
+    "family:devices": "node apps/api/dist/src/family/cli.js",
+    "family:apk:preview": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/android/build-family-release.ps1 -PreActivation",
+    "family:verify:apk": "node scripts/family/verify-apk.mjs",
+    "qa": "npm run lint && npm run typecheck && npm run test && npm run build && npm run audit:prod && npm run e2e"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@capacitor/cli": "8.5.0",
+    "@eslint/js": "^9.34.0",
+    "@playwright/test": "^1.62.1",
+    "eslint": "^9.34.0",
+    "qrcode": "^1.5.4",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  },
+  "engines": {
+    "node": ">=24.17.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.0",
+    "@capacitor/core": "8.5.0"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
+  }
+}

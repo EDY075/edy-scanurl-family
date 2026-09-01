@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-labelledby="title description">
+  <title id="title">EDY ScanURL Family</title>
+  <desc id="description">Banner do EDY ScanURL Family, uma solução defensiva para verificar lojas antes de comprar.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07110F"/>
+      <stop offset="0.52" stop-color="#0B1714"/>
+      <stop offset="1" stop-color="#10211D"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="760" y1="100" x2="360" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35F0C5"/>
+      <stop offset="1" stop-color="#0BC7A2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1300 60) rotate(135) scale(760 520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35F0C5" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#35F0C5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="600" rx="32" fill="url(#background)"/>
+  <rect width="1600" height="600" rx="32" fill="url(#glow)"/>
+  <path d="M0 497C275 421 517 456 739 510C1004 574 1317 580 1600 453V600H0Z" fill="#0E2B24" fill-opacity="0.42"/>
+  <path d="M1040 0H1600V600H866C1059 448 1167 227 1040 0Z" fill="#35F0C5" fill-opacity="0.035"/>
+
+  <g transform="translate(122 118) scale(3.35)" filter="url(#shadow)">
+    <path d="M74 69C65 80 48 83 34 75C18 66 16 44 29 29C41 15 64 14 78 29L52 57Q50 60 47 58L40 51" fill="none" stroke="url(#brand)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g font-family="Inter, DM Sans, Segoe UI, Arial, sans-serif">
+    <text x="500" y="218" fill="#FFFFFF" font-size="76" font-weight="750" letter-spacing="-2.2">EDY ScanURL</text>
+    <text x="500" y="288" fill="#35F0C5" font-size="54" font-weight="650" letter-spacing="-1">Family</text>
+    <text x="503" y="347" fill="#C8D6D2" font-size="25" font-weight="450">Verifique antes de comprar.</text>
+    <text x="503" y="390" fill="#91A8A2" font-size="21" font-weight="400">Sinais públicos explicados em linguagem simples.</text>
+
+    <g transform="translate(503 446)" font-size="16" font-weight="600" letter-spacing="0.3">
+      <rect width="104" height="40" rx="20" fill="#142923" stroke="#2E4A43"/>
+      <text x="52" y="26" text-anchor="middle" fill="#C7D8D3">Web</text>
+      <rect x="118" width="152" height="40" rx="20" fill="#142923" stroke="#2E4A43"/>
+      <text x="194" y="26" text-anchor="middle" fill="#C7D8D3">Desktop PWA</text>
+      <rect x="284" width="144" height="40" rx="20" fill="#142923" stroke="#2E4A43"/>
+      <text x="356" y="26" text-anchor="middle" fill="#C7D8D3">Mobile PWA</text>
+      <rect x="442" width="134" height="40" rx="20" fill="#142923" stroke="#2E4A43"/>
+      <text x="509" y="26" text-anchor="middle" fill="#C7D8D3">Android</text>
+    </g>
+  </g>
+
+  <g transform="translate(1303 494)">
+    <circle cx="0" cy="0" r="54" fill="#35F0C5" fill-opacity="0.08" stroke="#35F0C5" stroke-opacity="0.25"/>
+    <path d="M-20 0L-6 14L23-18" fill="none" stroke="#35F0C5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
