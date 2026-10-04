@@ -8,6 +8,10 @@ Aplicação defensiva, em português, para ajudar famílias a avaliar sinais pú
 
 > A análise reduz riscos, mas não garante a segurança de uma compra. Sempre confirme identidade, pagamento, políticas e reputação da loja.
 
+## Apresentação em vídeo
+
+https://github.com/user-attachments/assets/aa651fb7-86b4-4a85-8d87-a624db29d7a1
+
 ## Live Demo
 
 [Abrir o EDY ScanURL Family](https://edy-scanurl-family.pages.dev/)
